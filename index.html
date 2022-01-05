@@ -30,11 +30,11 @@
 	display: block;
 	height: 100px;
 	}
-	.fade {
+	/* .fade {
 	margin: 50px;
 	padding: 50px;
 	opacity: 1;
-	}
+	} */
 	
 	#train,#banner,#aboutus,#aboutus2{
 		max-width: 1230px; 
@@ -64,7 +64,7 @@
 		text-align: center;
 	}
 </style>
-<script>
+<!-- <script>
 	$(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -82,7 +82,7 @@
   }).scroll(); //invoke scroll-handler on page-load
 });
 
-</script>
+</script> -->
 <body>
 	<img src="背景(橘色).png" id="background">
 	<div class = 'row fixed-top'>
@@ -104,24 +104,24 @@
 		  </ul> 
 		</div>
 	</div>	
-	<div class = 'container' id ='cn' style="margin-top: 100px; margin-left: 130px;" >
+	<div class = 'container' id ='cn' style="margin-top: 100px; " >
 		  
 		<div class = 'row' >
 				<div class = 'col' id = 'header'>
-					<div class="card mb-3 fade" style="margin-left: 160px; margin-top: 220px;" id = 'train'>					
+					<div class="card mb-3 " style=" margin-top: 220px;" id = 'train'>					
 						<h1 style="color: white; font-size: 60px;">34號列車</h1>
 					</div>
 
-					<div class="card mb-3 fade" style="margin-left: 160px; margin-top: 220px;" id = 'banner'>					
-						<p style="color: white; font-size: 32px;">各位旅客您好，3點52分，<br>開往歸返站的列車34即將進站，
+					<div class="card mb-3 " style="margin-left: 160px; margin-top: 220px; text-align: center;" id = 'banner'>					
+						<p class="text-center" style="text-align: center; color: white; font-size: 32px;">各位旅客您好，3點52分，<br>開往歸返站的列車34即將進站，
 							請至第一月台候車。<br>
 							本次列車由現狀出發，經往<br>感召、守護者、啟程、試煉、深淵、苦難、獎賞、回歸、重生，
 							最終站是歸返，途中各站皆停。<br>請各位旅客備好您的目標，安心搭乘34號列車前往歸返，<br>祝您旅途愉快。</p>
 					</div>
 
-					<div class="card mb-3 fade" style="margin-left: 160px; margin-top: 200px; height: 500px;" id = 'aboutus'>	
+					<div class="card mb-3 " style="margin-left: 160px; margin-top: 200px; height: 500px;" id = 'aboutus'>	
 						<h1 style="color: white; font-size: 50px;">關於我們</h1><br><br>
-						<p style="color: white; font-size: 32px;">
+						<p class="text-center" style="text-align: center; color: white; font-size: 32px;">
 							人生是一趟周而復始的旅程，而旅人在跋山涉水中追尋生命的意義。<br><br>
 							首先，你會收到未來的自己感召，<br>
 							他呼喚著你從現況啟程，開啟了為期一年的冒險旅途。<br><br>
@@ -132,8 +132,8 @@
 							34號列車的車門也會為你敞開。	
 						</p>
 					</div>	
-					<div class="card mb-3 fade" style="margin-left: 160px; margin-top: 220px; height: 700px;" id = 'aboutus2'>
-						<p style="color: white; font-size: 32px;">
+					<div class="card mb-3 " style="margin-left: 160px; margin-top: 220px; height: 700px;" id = 'aboutus2'>
+						<p class="text-center" style="text-align: center; color: white; font-size: 32px;">
 							我們會給予最真情實感的回饋，<br>
 							讓你在追尋自我的路上並不孤單。<br><br>	
 							年關後，<br>
@@ -147,19 +147,19 @@
 							踏上34號列車，開啟你的旅程吧。
 						</p>
 					</div>	
-					<div class="card mb-3 fade" style="max-width: 1230px; border: none; height: 200px;" id='activity'>
+					<div class="card mb-3 " style="max-width: 1230px; border: none; height: 200px;" id='activity'>
 						<h5 style="color: white; font-size: 60px; text-align: center;"><b>活動資訊</b></h5>
 					</div>
 
-					<div class="card mb-3 fade" style="max-width: 1230px; border: none;  height: 650px;" id='#'>
+					<div class="card mb-3 " style="max-width: 1230px; border: none;  " id='#'>
 						<div class="row g-0">
-						  <div class="col-md-4" style="margin-top: -3px; width:500 px;">
-							<img src="遺。書.png" class="img-fluid rounded-start" style="width:500 px; height: 560px;" id="poster">
+						  <div class="col-md-4">
+							<img src="遺。書.png" class="img-fluid rounded-start"  id="poster">
 						  </div>
 						  <div class="col-md-8" >
 							<div class="card-body">
 							  <h5 class="card-title" style="font-size: 45px;"><b>&nbsp;遺。書</b></h5>
-							  <p class="card-text" style="font-size: 18px;">
+							  <p class="text-start" class="card-text" style="font-size: 18px;">
 								&nbsp;&nbsp;&nbsp;「遺．書」，一封為了避免遺憾而留下的書信。<br>
 
 								&nbsp;&nbsp;&nbsp;寫下對於過去的反思、對於現況的審視，還有對於未來的想像，<br>
@@ -173,11 +173,11 @@
 								
 								&nbsp;&nbsp;&nbsp;祝福您可以透過這個活動更加認識自己，完成生命中的種種小遺憾，擁抱新生。<br>
 							  </p>
-							  <p class="card-text"style="font-size: 20px;"><small class="text-muted">
+							  <p class="text-start" class="card-text"style="font-size: 20px;"><small class="text-muted">
 								&nbsp;&nbsp;&nbsp;活動資訊：<br>
 								&nbsp;&nbsp;&nbsp;．日期：1/7~2/28收件（線上填寫、1/13、14活動現場填寫）<br>
 								&nbsp;&nbsp;&nbsp;．費用：49/張<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlUssGOT8jVPJl7lK9oeX9Kixb0ZHHwchgX723awNorqwm2w/viewform?usp=sf_link"  target="_blank">表單填寫</a><br>
+								<a class="text-start"  href="https://docs.google.com/forms/d/e/1FAIpQLSdlUssGOT8jVPJl7lK9oeX9Kixb0ZHHwchgX723awNorqwm2w/viewform?usp=sf_link"  target="_blank">表單填寫</a><br>
 								&nbsp;&nbsp;&nbsp;．收費方式：轉帳、line pay、實體收費（請先付款）（中山&成大校園內）
 								</small></p>
 							</div>
@@ -186,15 +186,15 @@
 					</div>
 			
 
-					<div class="card mb-3 fade" style="max-width: 1230px; border: none;  height: 650px;" id='#'>
+					<div class="card mb-3 " style="max-width: 1230px; border: none;  " id='#'>
 						<div class="row g-0">
-						  <div class="col-md-4" style="margin-top: -3px; width:500 px;">
-							<img src="遺憾信箱.png" class="img-fluid rounded-start" style="width:500 px; height: 560px;" id="poster">
+						  <div class="col-md-4">
+							<img src="遺憾信箱.png" class="img-fluid rounded-start"  id="poster">
 						  </div>
 						  <div class="col-md-8" >
 							<div class="card-body">
 							  <h5 class="card-title" style="font-size: 45px;"><b>&nbsp;遺憾信箱</b></h5>
-							  <p class="card-text" style="font-size: 18px;">
+							  <p class="text-start" class="card-text" style="font-size: 18px;">
 								&nbsp;&nbsp;&nbsp;又過了一次年關，去年的您是否有成長了什麼？<br>
 								&nbsp;&nbsp;&nbsp;又有什麼不小心落下了？<br><br>
 								
@@ -206,7 +206,7 @@
 								&nbsp;&nbsp;&nbsp;期望透過遺憾信箱，您可以鬆開解不開的心結，<br>
 								&nbsp;&nbsp;&nbsp;重振心情，帶著一路上得到的關心和力量，朝著嶄新的自己邁進。
 							  </p>
-							  <p class="card-text"style="font-size: 20px;"><small class="text-muted">
+							  <p class="text-start" class="card-text"style="font-size: 20px;"><small class="text-muted">
 								&nbsp;&nbsp;&nbsp;活動資訊：<br>
 								&nbsp;&nbsp;&nbsp;．日期：1/13（四）<br>
 								&nbsp;&nbsp;&nbsp;．時間：10:00~17:30<br>
@@ -217,15 +217,15 @@
 						  </div>
 						</div>
 					</div>
-					<div class="card mb-3 fade" style="max-width: 1230px; border: none;  height: 650px;" id='#'>
+					<div class="card mb-3 " style="max-width: 1230px; border: none; " id='#'>
 						<div class="row g-0">
-						  <div class="col-md-4" style="margin-top: -3px; width:500 px;">
-							<img src="34號列車(無聲對談).png" class="img-fluid rounded-start" style="width:500 px; height: 560px;" id="poster">
+						  <div class="col-md-4">
+							<img src="34號列車(無聲對談).png" class="img-fluid rounded-start"  id="poster">
 						  </div>
 						  <div class="col-md-8" >
 							<div class="card-body">
 							  <h5 class="card-title" style="font-size: 45px;"><b>&nbsp;無聲對談</b></h5>
-							  <p class="card-text" style="font-size: 18px;">
+							  <p class="text-start" class="card-text" style="font-size: 18px;">
 								&nbsp;&nbsp;&nbsp;對於一段關係，<br>
 								&nbsp;&nbsp;&nbsp;您可能想加深、想確認、想挽回、想了斷，<br>
 								&nbsp;&nbsp;&nbsp;可能有想說卻赧於當面開口，不說又會造成遺憾的話，<br>
@@ -238,12 +238,12 @@
 								
 								&nbsp;&nbsp;&nbsp;1月14日，34號列車隨時歡迎您的搭乘。
 							  </p>
-							  <p class="card-text"style="font-size: 20px;"><small class="text-muted">
+							  <p class="text-start"class="card-text"style="font-size: 20px;"><small class="text-muted">
 								&nbsp;&nbsp;&nbsp;活動資訊：<br>
 								&nbsp;&nbsp;&nbsp;．日期：1/14（五）<br>
 								&nbsp;&nbsp;&nbsp;．時間：10:10~17:00（請先填寫時段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="https://forms.gle/ftzPLnWRkFg611BNA"  target="_blank">報名表單</a>
-								<a href="https://docs.google.com/spreadsheets/d/16h3JNlG2L9Ug4dtj21eXHyXGfCRDoc17Grt_JztI-78/edit?usp=sharing"  target="_blank">時段填寫</a><br>
+								<a class="text-start"  href="https://forms.gle/ftzPLnWRkFg611BNA"  target="_blank">報名表單</a>
+								<a class="text-start"  href="https://docs.google.com/spreadsheets/d/16h3JNlG2L9Ug4dtj21eXHyXGfCRDoc17Grt_JztI-78/edit?usp=sharing"  target="_blank">時段填寫</a><br>
 								&nbsp;&nbsp;&nbsp;．地點：國立中山大學貨櫃創業基地<br>
 								&nbsp;&nbsp;&nbsp;．免費參與（本活動採完全預約制，請務必事先報名）</small></p>
 							</div>
@@ -251,12 +251,12 @@
 						</div>
 					</div>
 
-					<div class="card mb-3 fade" style="max-width: 1230px; border: none; height: 200px; color:rgb(201, 199, 196)" id='contactus'>
+					<div class="card mb-3 " style="max-width: 1230px; border: none; height: 200px; color:rgb(201, 199, 196)" id='contactus'>
 						<h5 style="color: white; font-size: 30px; text-align: center;"><b>－聯絡我們－</b></h5>
-						<p style="margin-left: 450px;">
-						<a style="color: white; font-size: 26px; text-align: center;"href="https://www.facebook.com/34%E8%99%9F%E5%88%97%E8%BB%8A_No34-111017578122038" target="_blank">Facebook粉絲團</a>
+						<p style="margin-left: 515px;">
+						<a class="text-center"  style="color: white; font-size: 26px; text-align: center;"href="https://www.facebook.com/34%E8%99%9F%E5%88%97%E8%BB%8A_No34-111017578122038" target="_blank">Facebook粉絲團</a>
 						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a style="color: white; font-size: 26px; text-align: center;"href="https://www.instagram.com/express_no.34/" target="_blank">Instgram</a>
+						<a class="text-center"  style="color: white; font-size: 26px; text-align: center;"href="https://www.instagram.com/express_no.34/" target="_blank">Instgram</a>
 						<br>&nbsp;&nbsp;© 34號列車_Express34
 						</p>	
 					</div>
