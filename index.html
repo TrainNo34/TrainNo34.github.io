@@ -20,9 +20,10 @@
 	body{
 		overflow: auto;
 		background-image: url('background.jpg');
-		background-repeat: no-repeat;
+		background-repeat: no-repeat,no-repeat;
 		background-size: 1845px 720px;
 		background-color: black;
+
 	}
 	:target:before {
 	content: "";
@@ -34,13 +35,29 @@
 	padding: 50px;
 	opacity: 1;
 	}
-	#train{
+	
+	#train,#banner,#aboutus,#aboutus2{
 		max-width: 1230px; 
 		height: 400px;
 		border: none; 
 		text-align: center;	
 		background-color: none;
 		background: none;
+	}
+	
+	#background{
+		max-width: 1845px;
+		margin-top:1450px ;
+		position:absolute; 
+		width: 1845px ;
+		height: 720px;
+		margin-left: -80px;
+	}
+	#poster:hover{
+			transform:scale(1.2,1.2);
+		}
+	#activity{
+		background-color:rgba(255, 255, 255, 0.3);
 	}
 	#select{
 		color:rgb(255, 242, 218);
@@ -67,6 +84,7 @@
 
 </script>
 <body>
+	<img src="背景(橘色).png" id="background">
 	<div class = 'row fixed-top'>
 		<div id="title" class="col fixed-top" style='background-color:#171d3a; height: 75px;'>
 		<a href="#train"><img id="logo" style="display: inline-block;width: 200px; height: 50px;" src="LOGO(白色).png"></a>
@@ -91,54 +109,142 @@
 					<div class="card mb-3 fade" style="margin-left: 160px; margin-top: 220px;" id = 'train'>					
 						<h1 style="color: white; font-size: 60px;">34號列車</h1>
 					</div>
-					<div class="card mb-3 fade" style="max-width: 1230px; border: none;" id='activity'>
-						<div class="row g-0">
-						  <div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">活動資訊</h5>
-								<p class="card-text">時空膠囊
-									...
-								</p>
-								<p class="card-text"><small class="text-muted">可能有什麼要說的?</small></p>
-							</div>
-						  </div>
-						  <div class="col-md-4">
-							<img src="樹(暫用例圖).jpg" class="img-fluid rounded-start" alt="...">  
-							
-						  </div>
-						</div>
+
+					<div class="card mb-3 fade" style="margin-left: 160px; margin-top: 220px;" id = 'banner'>					
+						<p style="color: white; font-size: 32px;">各位旅客您好，3點52分，<br>開往歸返站的列車34即將進站，
+							請至第一月台候車。<br>
+							本次列車由現狀出發，經往<br>感召、守護者、啟程、試煉、深淵、苦難、獎賞、回歸、重生，
+							最終站是歸返，途中各站皆停。<br>請各位旅客備好您的目標，安心搭乘34號列車前往歸返，<br>祝您旅途愉快。</p>
 					</div>
 
-					<div class="card mb-3 fade" style="max-width: 1230px; border: none;" id='aboutus'>
+					<div class="card mb-3 fade" style="margin-left: 160px; margin-top: 200px; height: 500px;" id = 'aboutus'>	
+						<h1 style="color: white; font-size: 50px;">關於我們</h1><br><br>
+						<p style="color: white; font-size: 32px;">
+							人生是一趟周而復始的旅程，而旅人在跋山涉水中追尋生命的意義。<br><br>
+							首先，你會收到未來的自己感召，<br>
+							他呼喚著你從現況啟程，開啟了為期一年的冒險旅途。<br><br>
+							途中，你或許會在外界遭遇接踵而至的試煉，<br>
+							背負著內心的苦難墜入深淵，你或許想放棄，或許被現實給擊垮。<br><br>
+							旅人，別擔心，<br>
+							你身邊將有總常伴在左右的守護者，<br>
+							34號列車的車門也會為你敞開。	
+						</p>
+					</div>	
+					<div class="card mb-3 fade" style="margin-left: 160px; margin-top: 220px; height: 700px;" id = 'aboutus2'>
+						<p style="color: white; font-size: 32px;">
+							我們會給予最真情實感的回饋，<br>
+							讓你在追尋自我的路上並不孤單。<br><br>	
+							年關後，<br>
+							過去的你會捎來訊息，<br>
+							成長和轉變是最大的獎賞。<br><br>
+							你將擺脫恐懼、了結遺憾，<br>
+							你對於世界又認識得更透徹。<br>
+							你可以告別過往，張開雙臂，擁抱嶄新的生命。<br><br>
+
+							現在，買張車票，<br>
+							踏上34號列車，開啟你的旅程吧。
+						</p>
+					</div>	
+					<div class="card mb-3 fade" style="max-width: 1230px; border: none; " id='activity'>
+						<h5 style="color: white; font-size: 60px; text-align: center;"><b>活動資訊</b></h5>
+					</div>
+
+					<div class="card mb-3 fade" style="max-width: 1230px; border: none;  height: 650px;" id='#'>
 						<div class="row g-0">
-						  <div class="col-md-4">
-							<img src="樹(暫用例圖).jpg" class="img-fluid rounded-start" alt="...">
+						  <div class="col-md-4" style="margin-top: -3px; width:500 px;">
+							<img src="遺。書.png" class="img-fluid rounded-start" style="width:500 px; height: 560px;" id="poster">
 						  </div>
-						  <div class="col-md-8">
+						  <div class="col-md-8" >
 							<div class="card-body">
-							  <h5 class="card-title">關於我們</h5>
-							  <p class="card-text">我們是由來自中山大學、輔仁大學、東吳大學的學生組成的團隊
-								  ...
+							  <h5 class="card-title" style="font-size: 45px;"><b>&nbsp;遺。書</b></h5>
+							  <p class="card-text" style="font-size: 18px;">
+								&nbsp;&nbsp;&nbsp;「遺．書」，一封為了避免遺憾而留下的書信。<br>
+
+								&nbsp;&nbsp;&nbsp;寫下對於過去的反思、對於現況的審視，還有對於未來的想像，<br>
+								&nbsp;&nbsp;&nbsp;或者想想，一生中有沒有什麼是不做會後悔的事？<br><br>
+								
+								&nbsp;&nbsp;&nbsp;不論您是想要擴大舒適圈、做出改變，還是保持現在的優點，<br>
+								&nbsp;&nbsp;&nbsp;您都可以在這一年好好實踐它們，<br><br>
+								
+								&nbsp;&nbsp;&nbsp;一年過去後，34號列車會將您許下的心願製作成客製化的專屬明信片，<br>
+								&nbsp;&nbsp;&nbsp;並且隨信附上誠摯的手寫回信，為您冬日送暖。<br><br>
+								
+								&nbsp;&nbsp;&nbsp;祝福您可以透過這個活動更加認識自己，完成生命中的種種小遺憾，擁抱新生。<br>
 							  </p>
-							  <p class="card-text"><small class="text-muted">可能有什麼要說的?</small></p>
+							  <p class="card-text"style="font-size: 20px;"><small class="text-muted">
+								&nbsp;&nbsp;&nbsp;活動資訊：<br>
+								&nbsp;&nbsp;&nbsp;．日期：1/7~2/28收件（線上填寫、1/13、14活動現場填寫）<br>
+								&nbsp;&nbsp;&nbsp;．費用：49/張<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="https://forms.gle/ftzPLnWRkFg611BNA"  target="_blank">時段填寫</a><br>
+								&nbsp;&nbsp;&nbsp;．收費方式：轉帳、line pay、實體收費（請先付款）（中山&成大校園內）
+								</small></p>
 							</div>
 						  </div>
 						</div>
 					</div>
-					<div class="card mb-3 fade" style="max-width: 1230px; border: none;" id='note'>
+			
+
+					<div class="card mb-3 fade" style="max-width: 1230px; border: none;  height: 650px;" id='#'>
 						<div class="row g-0">
-						  <div class="col-md-8">
+						  <div class="col-md-4" style="margin-top: -3px; width:500 px;">
+							<img src="遺憾信箱.png" class="img-fluid rounded-start" style="width:500 px; height: 560px;" id="poster">
+						  </div>
+						  <div class="col-md-8" >
 							<div class="card-body">
-								<h5 class="card-title">產品服務</h5>
-								<p class="card-text">提早開始反思自己還沒做的事
-									...
-								</p>
-								<p class="card-text"><small class="text-muted">可能有什麼要說的?</small></p>
+							  <h5 class="card-title" style="font-size: 45px;"><b>&nbsp;遺憾信箱</b></h5>
+							  <p class="card-text" style="font-size: 18px;">
+								&nbsp;&nbsp;&nbsp;又過了一次年關，去年的您是否有成長了什麼？<br>
+								&nbsp;&nbsp;&nbsp;又有什麼不小心落下了？<br><br>
+								
+								&nbsp;&nbsp;&nbsp;歡迎您寫下自己未完成的遺憾、<br>
+								&nbsp;&nbsp;&nbsp;回信給同樣在過去抱有遺憾的同學，<br>
+								&nbsp;&nbsp;&nbsp;在新的一年為彼此帶來祝福，<br>
+								&nbsp;&nbsp;&nbsp;並在隔日1月14日取回同學給您的溫暖和關懷。<br><br>
+								
+								&nbsp;&nbsp;&nbsp;期望透過遺憾信箱，您可以鬆開解不開的心結，<br>
+								&nbsp;&nbsp;&nbsp;重振心情，帶著一路上得到的關心和力量，朝著嶄新的自己邁進。
+							  </p>
+							  <p class="card-text"style="font-size: 20px;"><small class="text-muted">
+								&nbsp;&nbsp;&nbsp;活動資訊：<br>
+								&nbsp;&nbsp;&nbsp;．日期：1/13（四）<br>
+								&nbsp;&nbsp;&nbsp;．時間：10:00~17:30<br>
+								&nbsp;&nbsp;&nbsp;．地點：國立中山大學理工長廊<br>
+								&nbsp;&nbsp;&nbsp;．領取回信時間：1/14（五），10:10~17:00於中山大學貨櫃創業基地<br>
+								&nbsp;&nbsp;&nbsp;．免費參與</small></p>
 							</div>
 						  </div>
-						  <div class="col-md-4">
-							<img src="樹(暫用例圖).jpg" class="img-fluid rounded-start" alt="...">  
-							
+						</div>
+					</div>
+					<div class="card mb-3 fade" style="max-width: 1230px; border: none;  height: 650px;" id='#'>
+						<div class="row g-0">
+						  <div class="col-md-4" style="margin-top: -3px; width:500 px;">
+							<img src="34號列車(無聲對談).png" class="img-fluid rounded-start" style="width:500 px; height: 560px;" id="poster">
+						  </div>
+						  <div class="col-md-8" >
+							<div class="card-body">
+							  <h5 class="card-title" style="font-size: 45px;"><b>&nbsp;無聲對談</b></h5>
+							  <p class="card-text" style="font-size: 18px;">
+								&nbsp;&nbsp;&nbsp;對於一段關係，<br>
+								&nbsp;&nbsp;&nbsp;您可能想加深、想確認、想挽回、想了斷，<br>
+								&nbsp;&nbsp;&nbsp;可能有想說卻赧於當面開口，不說又會造成遺憾的話，<br>
+								&nbsp;&nbsp;&nbsp;我們都期望您能夠在一片無聲的寂靜中好好沉澱、傾聽、<br>
+								&nbsp;&nbsp;&nbsp;感受自己的心。<br><br>
+								
+								&nbsp;&nbsp;&nbsp;不論您和您的同行者是朝夕相處的親人、相識十年的老友、<br>
+								&nbsp;&nbsp;&nbsp;愛情遇到倦怠期的情侶、仍在雲霧裡躊躇不前的曖昧對象，<br>
+								&nbsp;&nbsp;&nbsp;甚至您只是想抽離，以第三人稱和自己的靈魂談話，<br><br>
+								
+								&nbsp;&nbsp;&nbsp;1月14日，34號列車隨時歡迎您的搭乘。
+							  </p>
+							  <p class="card-text"style="font-size: 20px;"><small class="text-muted">
+								&nbsp;&nbsp;&nbsp;活動資訊：<br>
+								&nbsp;&nbsp;&nbsp;．日期：1/14（五）<br>
+								&nbsp;&nbsp;&nbsp;．時間：10:10~17:00（請先填寫時段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="https://forms.gle/ftzPLnWRkFg611BNA"  target="_blank">報名表單</a>
+								<a href="https://docs.google.com/spreadsheets/d/16h3JNlG2L9Ug4dtj21eXHyXGfCRDoc17Grt_JztI-78/edit?usp=sharing"  target="_blank">時段填寫</a><br>
+								&nbsp;&nbsp;&nbsp;．地點：國立中山大學貨櫃創業基地<br>
+								&nbsp;&nbsp;&nbsp;．免費參與（本活動採完全預約制，請務必事先報名）</small></p>
+							</div>
 						  </div>
 						</div>
 					</div>
