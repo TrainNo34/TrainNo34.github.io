@@ -52,8 +52,20 @@
 		
 		margin-top:1550px ;
 		position:absolute; 
-		
 
+	}
+	#background2{
+		margin-top:2250px ;
+		position:absolute; 
+	}
+	#background3{
+		margin-top:600px ;
+		position:absolute; 
+		-moz-transform:scaleX(-1);
+		-webkit-transform:scaleX(-1);
+		-o-transform:scaleX(-1);
+		transform:scaleX(-1);
+		opacity: 0.5;
 	}
 	#poster:hover{
 			transform:scale(1.2,1.2);
@@ -64,6 +76,7 @@
 	#select{
 		color:rgb(255, 242, 218);
 		text-align: center;
+		font-size: 20px;
 	}
 </style>
 <!-- <script>
@@ -86,8 +99,10 @@
 
 </script> -->
 <body>
-	<img src="background.jpg" id="background1" class="img-fluid" alt="...">>
-	<img src="背景(橘色).png" id="background" class="img-fluid" alt="...">>
+	<img src="background.png" id="background1" class="img-fluid" alt="...">
+	<img src="背景(橘色).png" id="background" class="img-fluid" alt="...">
+	<img src="閃光.png" id="background2" class="img-fluid" alt="...">
+	<img src="閃光.png" id="background3" class="img-fluid" alt="...">
 	<div class = 'row fixed-top'>
 		<div id="title" class="col fixed-top" style='background-color:#171d3a; height: 75px;'>
 		<a href="#train"><img id="logo" style="display: inline-block;width: 200px; height: 50px;" src="LOGO(白色).png"></a>
@@ -150,7 +165,7 @@
 							踏上34號列車，開啟你的旅程吧。
 						</p>
 					</div>	
-					<div class="card mb-3 " style="max-width: 1230px; border: none; height: 200px;" id='activity'>
+					<div class="card mb-3 " style="max-width: 1230px; border: none;" id='activity'>
 						<h5 style="color: white; font-size: 60px; text-align: center;"><b>活動資訊</b></h5>
 					</div>
 
